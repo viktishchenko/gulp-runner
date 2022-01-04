@@ -1,0 +1,8 @@
+header {
+  font-size: 6rem;
+  color: var(--color-white);
+  background-image: url(../images/2.jpg);
+  @include media-tablet {
+    font-size: 3rem;
+  }
+}

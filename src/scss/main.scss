@@ -1,0 +1,19 @@
+// Helpers
+
+@import "helpers/mixins";
+@import "helpers/fonts";
+@import "helpers/placeholders";
+@import "helpers/vendor";
+@import "helpers/vars";
+@import "helpers/settings";
+
+/* Blocks */
+
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/footer";
+
+.main-heading {
+  background-image: url(../images/2.jpg);
+  color: var(--color-white);
+}

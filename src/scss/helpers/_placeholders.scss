@@ -1,0 +1,23 @@
+%transition {
+  transition: all 0.3s ease-out;
+}
+
+%font-prim {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+// @extend %font-prim;
+
+%custom-scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-white);
+    border-radius: 10px;
+  }
+}

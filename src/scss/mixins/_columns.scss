@@ -1,0 +1,12 @@
+@mixin columns ($width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    >* {
+        flex-basis: $width;
+    }
+}
+
+// .layout-2-column {
+//   @include columns($width: 47%);
+// }

@@ -1,0 +1,20 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: url('../fonts/#{$url}.woff2') format('woff2');
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+// @include font-face("notosans", "notosans", 400);
+
+@mixin font ($size, $height: $size, $weight: bold, $style: normal) {
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+// @include font($size: 2.8rem, $height: 3.3rem, $weight: 300);
